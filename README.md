@@ -40,4 +40,23 @@ String namn = scan.nextLine(); //väntar på en input
 system.out.println("your name is: " + namn);
 ```
 
+### metoder
+
+Public delen i metoder är tilgångsheten mellan filer och klasser. Om den är private kan den enbart användas inom sin klass. Public ger möjlighet för flera klasser. 
+int i denna stränggen innebär return sats. Alltså måste vi använda *return* i slutet av metoden. Skulle man skrivit void så behöver man inte skriva return.
+Static vilket är lite oklart verkar göra själva metoden möjlig att använda på klass nivå eller kallat globalt.
+```java
+public static int addNumbers (int tal1, int tal2) {
+}
+```
+Man kan overloada med metoder, alltså om jag vill ha möjligheten att både ta in integers och doubles så kan man kopiera själva koden och skriva in en exakt likadan fast med doubles.
+Då tar kompilatorn den som är "rätt" för köra så slipper man pilla med parses.
+```java
+public static int addNumbers (int tal1, int tal2) {
+}
+public static int addNumbers (double tal1, double tal2) {
+}
+```
+
+
 
