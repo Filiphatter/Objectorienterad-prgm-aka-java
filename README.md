@@ -58,5 +58,45 @@ public static int addNumbers (double tal1, double tal2) {
 }
 ```
 
+### regex
+Ett sätt att felsöka/kontrollera att användares input stämmer överens men komplicerade tecken för datorn skall förstå, googla efter behov.
+
+### listor
+Det finns två typer av lister, array list och linked list, array list är oftast använd men linked list är bra för en upprepande använding.
+man kan också göra en array till en list
+
+```java
+public static void listExempel() {
+String[] stringArray = {"hej", "på", "dig"};
+// <> betyder generics vilket är att man kan bestämma vilken datatyp metoden ska använda. alltså vilken datatyp som lagras i detta fallet.
+List<String>() stringList = new ArrayList<>();
+
+stringList.add("String");
+stringList.add("text");
+stringList.add("en till sträng");
+
+// private static void getInput() {
+Scanner scanner = new Scanner(System.in);
+string input = scanner.nextLine();
+}
+
+//här skapar vi en input som sparas i en lista. 
+public static void addStuffToListWithScanner(){
+
+List<String> myList = new ArrayList<>();
+while(true){
+    String input = getInput() //metod med input scanner
+
+      myList.add(input);
+      system.out.println("want to adda string?");
+        if(getInput().equals("nej"){
+        break}
+  }
+system.out.println("myList = " + myList)
+} 
+
+```
+
+
 
 
