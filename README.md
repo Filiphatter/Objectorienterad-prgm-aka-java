@@ -163,6 +163,11 @@ books.add(new Book("Lasse och Maja", "Dekdektivbyro"));
 
 ```
 
+### Vart ska koden ligga? kodorganisation i OOP 
+- Single responsibility principle
+  En klass bör ha endast ett ansvar, en anledning att ändras. Man vet vad klassen gör samt organisationen är lättare.
+  Exempelvis i Book och library, att kolla om en book är lång är en lämplig sak för book klassen. Iom de relaterar till varandra.
+  Däremot att kolla om en bok är äldst av alla böcker i library så relaterar de inte, alltså blir det kaos.
 
 
 
