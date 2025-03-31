@@ -169,6 +169,43 @@ books.add(new Book("Lasse och Maja", "Dekdektivbyro"));
   Exempelvis i Book och library, att kolla om en book är lång är en lämplig sak för book klassen. Iom de relaterar till varandra.
   Däremot att kolla om en bok är äldst av alla böcker i library så relaterar de inte, alltså blir det kaos.
 
+### 03/31 arv o encapsulation
+- Arv
+  Arv kräver minst två klasser och keywordet extends. Arv används för att ärva allt, ex B kan ärva allt ifrån A, alltså B är ett A men A är inte B. En förlängning.
+  Subklasser, alltså den som ärver får allt ifrån superklassen den som "ger bort".
+  Gör man en konstruktor i superklassen (huvud klassen) så behöver man göra en matchande konstruktor i subklassen. Varav man använder keywordet "super" i subklassen.
+  Främsta praktiska användningen är när klasser har något gemensamt eller förlitar sig på något gemensamt.
+
+  ```java
+  Public class Animal
+
+  String name;
+
+  public void makeSound() {
+  sout("animal sound");
+  }
+  ```
+
+  ```java
+  Public class Dog extends Animal //extends är själva ärvet som möjliggörs
+  // nu är hund klassen en del av animal, alltså ärver ifrån animal.
+  ```
+  
+- Encapsulation
+  Man limiterar återkomst, det går att göra med följande
+  Private, default, protected, public. Dessa limiterar återkomst på olika sätt varav private är mest limiterande och public minst.
+  Syftet med encapsulation är dölja informationen i koden och istället för ha en "öppen" variable så hämtar man den ifrån denna privata variablen.
+  Man gör detta genom skapa private på attribut (data) och sedan getters som hämtar datan och kan ändra det kontrollerbart. Med hjälp av de 4 nämnda innan, access modifiers
+
+- polymorphism
+  Genom exxempelvis override så kan man förändra innehållet i metoder i olika klasser. Exempelvis en superklass animals kan ha metoden makesound(), samt cat och dog har samma metod.       Polymorphism handlar då om att vi har en form alltså makesound() men olika ljud i subklasserna. Alltså möjligör att använda superklassens data men förändra innehållet i subklasser.
+  finns även interface men läs på egenrisk (rabbithole möjlighet).
+
+- Abstract
+  Enda syftet med abstract är att man vill uttnytja arv. Abstract limiterar möjligheten att skapa obejkt i en klass. Nästintill alltid bara syfte med använda arv i subklasser
+  Finns även en poäng med abstrakta metoder för att använda den ärvda metoden i subklasser. En abstrakt metod kan endast finnas i en abstrakt klass.
+  När man har en abstrakt metod i en superklass så MÅSTE subklasser override:a iom att annars blir det omöjligt att skriva över den abstrakta metoden.
 
 
 
+  
